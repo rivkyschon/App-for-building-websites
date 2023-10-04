@@ -1,0 +1,224 @@
+
+.longText{
+  margin: 50px;
+}
+
+/* variables */
+/* mixins */
+/* ------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: raleway, arial;
+}
+
+.Pbody {
+  background-color: #ffcdd2;
+  color: #fff;
+  background: linear-gradient(100deg, #ef9a9a 40%, rgba(0, 0, 0, 0) 30%), radial-gradient(farthest-corner at 0% 0%, #ffd54f 70%, #4dd0e1 70%);
+}
+
+/* ------------------- */
+.line-above-nav {
+  background-color: #e57373;
+  height: 15px;
+  width: 933px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 100px 100px 0 0;
+}
+
+.nav {
+  display: flex;
+  height: 50px;
+  width: 950px;
+  margin: auto;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  background-color: white;
+  border-radius: 10px 10px 0 0;
+}
+.nav:hover {
+  transform: scaleY(1.05);
+}
+.nav .contact-me,
+.nav .nav-icons {
+  flex: 1;
+}
+.nav .contact-me {
+  color: #e57373;
+  text-transform: uppercase;
+  transition: 0.4s;
+  width: fit-content;
+  font-weight: bold;
+}
+.nav .contact-me:hover {
+  color: #006064;
+  cursor: pointer;
+}
+.nav ul li {
+  display: flex;
+  width: fit-content;
+  list-style-type: none;
+  text-decoration: none;
+  margin: 30px;
+}
+.nav li {
+  width: fit-content;
+}
+.nav li:hover {
+  cursor: pointer;
+}
+.nav .nav-icons {
+  text-align: right;
+  margin-right: 30px;
+  color: #e57373;
+}
+.nav .nav-icons i {
+  margin: 10px;
+  transition: 0.4s;
+}
+.nav .nav-icons i:hover {
+  color: #006064;
+  cursor: pointer;
+}
+
+/* ----- end of nav ----- */
+.main-page {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  width: 933px;
+  margin: auto;
+}
+.main-page .banner {
+  color: white;
+  display: flex;
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(170deg, #e57373 70%, #006064 60%);
+}
+.main-page .banner h1 {
+  padding: 15px;
+}
+.main-page .banner .banner-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.main-page .about-me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height:200px;
+  text-align: center;
+  width: 100%;
+  z-index: 0;
+  border-bottom: 4px dashed #006064;
+  color: #006064;
+}
+.main-page .about-me p {
+  margin: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.main-page .image-grid {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 900px;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-right: 33px;
+}
+.main-page .image-grid .grid-image {
+  margin: auto;
+  flex-basis: 25%;
+  margin-top: 25px;
+  transition: 0.22s ease-out;
+  opacity: 0.85;
+}
+.main-page .image-grid .grid-image:hover {
+  transform: scale(1.03);
+  opacity: 1;
+  cursor: pointer;
+}
+
+.block {
+  width: 933px;
+  margin: auto;
+  display: flex;
+  height: 250px;
+  background: linear-gradient(60deg, #e57373 40%, #006064 40%);
+  border-bottom: 1px solid #ffffff;
+  z-index: 1;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.block .block-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-left: 115px;
+  color: white;
+}
+.block .block-text h3 {
+  font-size: 25px;
+}
+.block .block-text a {
+  text-decoration: none;
+  color: white;
+  margin: 20px;
+  border: 2px solid #006064;
+  padding: 8px;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+.block .block-text a:hover {
+  background-color: #006064;
+  cursor: pointer;
+}
+
+.footer {
+  width: 933px;
+  margin: auto;
+  margin-bottom: 100px;
+  display: flex;
+  background-color: #006064;
+  color: white;
+  height: 50px;
+  align-items: center;
+  border-radius: 0 0 30px 30px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.footer .footer-text {
+  flex: 1;
+}
+.footer .footer-text p {
+  margin-left: 30px;
+}
+.footer .icons-footer {
+  margin-right: 30px;
+}
+.footer .fa-linkedin {
+  margin-right: 10px;
+}
+.footer .fa-linkedin:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.footer .fa-instagram:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.image{
+  height: 250px;
+  width: 250px;
+}

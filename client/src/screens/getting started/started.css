@@ -1,0 +1,63 @@
+input[type="button"] {
+    margin-left: 40px;
+    height: 36px;
+    width: 89px;
+    background: #d1d1d1;
+    border: none;
+    border-radius: 48px;
+    color: #000000;
+    font-size: 1em;
+    font-weight: bold;
+  }
+  
+  input[type="button"]:hover {
+    background: #ffffff;
+    color: #d1d1d1;
+    border: 1px solid #d1d1d1;
+  }
+  
+
+  .text input[type="text"]{
+    font-size: 20px;
+    border-style: solid;
+    width: 386px;
+    border-width: 0px 0px 2px 0px;
+  }
+
+ .goDashBoard{
+    height: 58px !important;
+    width: 167px !important;
+}
+
+.img{
+  height: 300px;
+  width: 400px;
+  background-size: cover;
+  border-radius: 19px;
+  position: static;
+  transition: 0.5s ease;
+}
+
+.images{
+  margin-top: 100px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.img:hover{
+  transition: 0.5s ease;
+  height: 310px;
+  width: 410px;
+}
+
+.img1{
+  background-image: url('./samples/1.png');
+}
+.img2{
+  background-image: url('./samples/2.png');
+}
+.img3{
+  background-image: url('./samples/4.png');
+}

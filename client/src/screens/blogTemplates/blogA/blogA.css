@@ -1,0 +1,79 @@
+/* // CSS overrides: later defined css style applies in browsers that support CSS spec */
+
+.ks-page-header {
+    background: #000000;
+    /* fallback for old browsers */
+    /* background: radial-gradient(circle at center, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), url('https://picsum.photos/id/0/1280/720'); */
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    display: flex;
+    height: 500px;
+    /* // for browsers that do not support flexbox -- CSS override */
+    height: 100vh;
+}
+
+.ks-page-title {
+    padding: 2em 0;
+    /* // added for browsers that do not support flexbox but do support height 100vh  -- CSS override */
+    margin: auto;
+}
+
+/* // css feature query conditional, browsers that support initial-letter will use these styles. Browsers that do not will do nothing with these styles
+// initial-letter currently has support in Safari */
+@supports (initial-letter: 4) or (-webkit-initial-letter: 4) {
+    .ks-fancy-letter::first-letter {
+        color: #1e1e1e;
+        font-weight: bold;
+        margin-right: 0.5em;
+        -webkit-initial-letter: 4;
+        initial-letter: 4;
+    }
+}
+
+/* 
+// overriding BS4 default max-width to be 1024px in order to utilize blog layout best practices of 2019
+// @resource: https://www.impactbnd.com/blog/blog-layout-best-practices-2016 */
+@media (min-width: 992px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+
+/* // Add To Any Share bar */
+/* Hide AddToAny vertical share bar when screen is less than 980 pixels wide */
+
+.a2a_floating_style.a2a_default_style {
+    border-radius: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.textBox {
+    margin: 300px;
+}
+.imagBox{
+    margin-bottom: 50px;
+}
+.bottomDiv{
+    margin-bottom: 100px;
+}
+@media screen and (min-width: 992px) {
+    .a2a_floating_style.a2a_default_style {
+        bottom: auto;
+        left: 0px;
+        top: 150px;
+        transform: translateX(0%);
+    }
+
+    .a2a_floating_style.a2a_default_style a {
+        clear: left;
+        display: block;
+        overflow: hidden;
+        padding: 4px;
+        text-decoration: none;
+    }
+}
